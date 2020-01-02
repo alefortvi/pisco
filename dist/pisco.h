@@ -3,7 +3,7 @@
 
 #include <ctime>
 #include <list>
-#include<windows.h>
+#include <windows.h>
 #include <iostream>
 #include <climits>
 

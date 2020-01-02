@@ -86,11 +86,18 @@ namespace pisco{
 	///////////////////////////////////////////////////////////////////////
 	
 	///////////////////////////////////////////////////////////////////////
-	/// register the key who will be readed for the contro
+	/// register the key which will be readed for the control
 	/// @brief registerKey
 	/// @param VK_key see https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 	/////////////////////////////////////////////////////////////////////////
 	void registerKey(int registeredKey);
+	
+	///////////////////////////////////////////////////////////////////////
+	/// unregister the key
+	/// @brief unregisterKey
+	/// @param VK_key see https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+	/////////////////////////////////////////////////////////////////////////
+	int unregisterKey(int registeredKey);
 	
 	///////////////////////////////////////////////////////////////////////
 	/// Set the time buffer to the all key
@@ -265,6 +272,21 @@ namespace pisco{
 							  new _::keyPisco(registeredKey)
 							  );
 							  
+	}
+	
+	///////////////////////////////////////////////////////////////////////
+	/// unregister the key
+	/// @brief unregisterKey
+	/// @param VK_key see https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+	/////////////////////////////////////////////////////////////////////////
+	int unregisterKey(int registeredKey){
+		list<_::keyPisco*>::iterator it;
+		for (it = _::keyList.begin(); it != _::keyList.end(); it++){
+			if((*it)->getKey() == registeredKey){
+				_::keyList.remove(*it);
+				return 1;
+			}
+		}
 	}
 	
 	///////////////////////////////////////////////////////////////////////

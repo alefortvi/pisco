@@ -34,4 +34,4 @@ This project is under the License (GNU). See the file ** LICENSE.md ** for detai
 
 
 ---
-⌨️ with ❤️ by [Villanuevand](https://github.com/alefortvi) 😊
+⌨️ with ❤️ by [alefortvi](https://github.com/alefortvi) 😊

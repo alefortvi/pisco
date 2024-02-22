@@ -38,14 +38,9 @@ Verifica si hay colisiÛn entre dos sprites y devuelve un cÛdigo indicando el tip
 - El mÈtodo `areColliding` requiere sprites para realizar la detecciÛn de colisiones.
 
 
-
----
+=======
 
 # Clase PiscoSprite
-
-La clase `PiscoSprite` permite gestionar varios objetos `PiscoDraw` como sprites. Permite agregar sprites, establecer un sprite activo y recuperar el sprite activo o su clave.
-
-## MÈtodos
 
 ### `void addSprite(const std::string& key, PiscoDraw& sprite)`
 Agrega un nuevo sprite con la clave especificada al mapa de sprites.
@@ -64,7 +59,7 @@ Devuelve la clave del sprite activo.
 - `std::map<std::string, PiscoDraw> sprites`: Mapa que almacena los sprites, donde la clave es el identificador ˙nico del sprite.
 - `std::string activeSpriteKey`: Clave del sprite activo.
 
----
+=======
 
 # Clase PiscoDraw
 
@@ -110,7 +105,7 @@ Mueve el lienzo seg˙n el desplazamiento especificado por `offsetX` y `offsetY`.
 - `std::vector<std::vector<Pixel>> matrix`: Matriz bidimensional que representa los pÌxeles del lienzo.
 
 
----
+=======
 
 # Clase Pixel
 
@@ -145,7 +140,7 @@ Devuelve el color asociado al pÌxel.
 - `std::string character`: Car·cter asociado al pÌxel.
 - `PiscoColor color`: Color asociado al pÌxel.
 
----
+=======
 
 # EnumeraciÛn PiscoColor
 
@@ -171,8 +166,7 @@ La enumeraciÛn `PiscoColor` define los colores disponibles para utilizar en la r
 La enumeraciÛn proporciona una amplia gama de colores que pueden ser utilizados para personalizar la apariencia de los elementos gr·ficos en el proyecto.
 
 
----
-
+=======
 
 # Ejemplo de uso de la clase Pisco
 
@@ -220,8 +214,7 @@ int main() {
 
     return 0;
 }
-
-
+=======
 
 ---
 ‚å®Ô∏è with ‚ù§Ô∏è by [alefortvi](https://github.com/alefortvi) üòä

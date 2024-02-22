@@ -8,6 +8,7 @@
 
 	class PiscoDraw {
 	public:
+		PiscoDraw(int x, int y, const std::vector<std::vector<Pixel>>& initialMatrix);
 		PiscoDraw(int width, int height, int x, int y);
 		PiscoDraw();
 		

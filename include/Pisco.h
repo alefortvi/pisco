@@ -20,7 +20,9 @@
 		static void putchxy(int x, int y, const std::string& ch, PiscoColor color);
 		static void putchxy(int x, int y, const std::string& ch);
 		static void draw(PiscoDraw& canvas);
+		static void draw(PiscoSprite& sprite);
 		static void erase(PiscoDraw& canvas);
+		static void erase(PiscoSprite& sprite);
 		static int areColliding( PiscoSprite& spriteFrom, PiscoSprite& spriteTo);
 		
 	};

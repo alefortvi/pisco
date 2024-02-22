@@ -52,6 +52,11 @@ using namespace std;
 		std::cout << ch; // Escribir el carácter en la posición deseada
 	}
 	
+	
+	void Pisco::draw( PiscoSprite& sprite) {
+		Pisco::draw(sprite.getActivatedSprite());
+	}
+	
 	void Pisco::draw( PiscoDraw& canvas) {
 		int canvasWidth = canvas.getWidth();
 		int canvasHeight = canvas.getHeight();
@@ -78,6 +83,10 @@ using namespace std;
 				putchxy(startX + x, startY + y, " ");
 			}
 		}
+	}
+	
+	void Pisco::erase( PiscoSprite& sprite) {
+		Pisco::erase(sprite.getActivatedSprite());
 	}
 	
 	int Pisco::areColliding(PiscoSprite& sprite1, PiscoSprite& sprite2) {
